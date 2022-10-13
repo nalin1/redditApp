@@ -1,0 +1,32 @@
+.items {
+    max-height: 300px;
+    width: 460px;
+    overflow: scroll;
+}
+ 
+.loader{
+    position: relative;   
+    bottom: 5%;
+    left: 49%;
+}
+
+ul li {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+button>i{
+  color:rgb(66, 63, 63);
+  transform :scale(1);
+}
+ button:hover > i{
+   color :white;
+  //  font-size: 26px;
+   transform: scale(1.5);
+}
+.card-subtitle{
+  font-size: x-small;
+  font-weight: 400;
+}

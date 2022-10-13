@@ -1,0 +1,26 @@
+
+     <div class="card shadow"  *ngIf="post?.data?.id">  
+        <div class="card-header" >
+            <h6 class="card-title"> {{post?.data?.title}}</h6>
+            <p class="card-subtitle"> Author : {{post?.data?.author}}</p>
+           
+          
+        </div>
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+         
+        
+          <img [src]="post?.data?.url" class="img-thumbnail" alt="" [width]="304" [height]="350" *ngIf="!post?.data?.is_video">
+        
+          <video width="400" height="315" controls *ngIf="post?.data?.is_video">        
+            <source [src]="post?.data?.media.reddit_video.fallback_url" type="video/mp4">        
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card-footer ">
+          <div class="d-flex justify-content-around"> 
+           <button type="button" class="btn btn-link btn-warning"><i class="bi bi-heart me-1"></i>  </button>
+           <button type="button" class="btn btn-link btn-warning"><i class="bi bi-chat me-1"></i>{{post?.data?.num_comments}}</button>
+           <button type="button" class="btn btn-link btn-warning"><i class="bi bi-share me-1"></i>  </button>
+        </div>
+        </div>
+      </div>
