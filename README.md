@@ -1,3 +1,16 @@
+
+
+# PreRequisite  
+# NodeJS
+Install  Nodejs latest version from https://nodejs.org/en/download/ 
+
+## Angular CLI
+install  Angular CLI  using command "npm install -g @angular/cli@13.1.2" 
+
+## Installation By zip Folder or Clone the App.
+ Extract the zip folder and go to folder and run command " npm install"
+
+
 # Reddit
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
