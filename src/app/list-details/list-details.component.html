@@ -1,9 +1,15 @@
   <div class="conatiner"> 
+    <div class="d-flex justify-content-start align-items-center">
+      <button type="button" class="btn btn-link btn-warning" routerLink="/list"><i class="bi bi-arrow-return-left"></i> Back </button>
+    </div>
      <div class="card shadow mt-5"  *ngIf="post?.data?.id">  
-        <div class="card-header">
+        <div class="card-header d-flex justify-content-start align-items-center">
+          
+            <button type="button" class="btn btn-danger btn-sm me-2" routerLink="/list"><i class="bi bi-arrow-return-left"></i> Back </button>
+         <div> 
             <h6 class="card-title"> {{post?.data?.title}}</h6>
             <p class="card-subtitle"> Author : {{post?.data?.author}}</p>
-           
+          </div>
           
         </div>
         <div class="card-body d-flex flex-column justify-content-center align-items-center">
